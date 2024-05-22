@@ -22,8 +22,8 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th width="38%">Data Pasien</th>
-                            <th>Keluhan</th>
+                            <th width="38%">Data Peserta</th>
+                            <th>Kebutuhan</th>
                             <th>Biaya</th>
                             <th>Status</th>
                             <th width="20%">Aksi</th>
@@ -35,24 +35,24 @@
                                 <td>{{ $item->id }}</td>
                                 <td>
                                     <dl class="row">
-                                        <dt class="col-md-4">Nama Pasien</dt>
+                                        <dt class="col-md-4">Nama Peserta</dt>
                                         <dd class="col-md-8">: {{ $item->pasien->nama_pasien }}</dd>
 
                                         <dt class="col-md-4">Nomor HP</dt>
                                         <dd class="col-md-8">: {{ $item->pasien->nomor_hp }}</dd>
 
-                                        <dt class="col-md-4">Tujuan Poli</dt>
+                                        <dt class="col-md-4">Kelas Pilihan</dt>
                                         <dd class="col-md-8">: {{ $item->poli }}</dd>
 
-                                        <dt class="col-md-4">Dokter</dt>
+                                        <dt class="col-md-4">Guru Pengajar</dt>
                                         <dd class="col-md-8">: {{ $item->dokter->nama_dokter }}</dd>
                                     </dl>
 
                                 </td>
                                 <td>
-                                    <div><strong>Keluhan</strong>: {{ $item->keluhan }}</div>
+                                    <div><strong>Kebutuhan&Pesan</strong>: {{ $item->keluhan }}</div>
                                     <div>
-                                        <strong>Diagnosa:</strong>
+                                        <strong>Hasil :</strong>
                                         {{ $item->diagnosis }}
                                     </div>
                                 </td>
@@ -64,7 +64,7 @@
                                 </td>
                                 <td>
                                     <a href="/administrasi/{{ $item->id }}/edit" class="btn btn-primary">
-                                        Diagnosis
+                                        Penilaian
                                     </a>
                                     @if (auth()->user()->role == 'admin')
                                         <form action="{{ route('administrasi.destroy', $item->id) }}" method="POST"

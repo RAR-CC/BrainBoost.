@@ -4,7 +4,7 @@
     <div class="card">
         <div class="card-header">{{ $judul }}</div>
         <div class="card-body">
-            <a href="/dokter/create" class="btn btn-primary mb-2">Tambah Dokter</a>
+            <a href="/dokter/create" class="btn btn-primary mb-2">Tambah Guru Pengajar</a>
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
@@ -34,7 +34,7 @@
                                         <div>Nama: {{ $item->nama_dokter }}</div>
                                         <div>Spesialis: {{ $item->spesialis }}</div>
                                         <div>Nomor HP: {{ $item->nomor_hp }}</div>
-                                        <div>Username: <strong>{{ $item->nomor_hp }}@dokter.com</strong></div>
+                                        <div>Username: <strong>{{ $item->nomor_hp }}@guru.com</strong></div>
                                     </div>
                                 </div>
                             </td>

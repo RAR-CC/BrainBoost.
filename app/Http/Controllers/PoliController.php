@@ -12,7 +12,7 @@ class PoliController extends Controller
     public function index()
     {
         $data['poli'] = \App\Models\Poli::latest()->paginate(10);
-        $data['judul'] = 'Data-data Poli';
+        $data['judul'] = 'Data-data Kelas';
         return view('poli_index', $data);
     }
 

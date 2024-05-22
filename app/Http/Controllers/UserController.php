@@ -12,7 +12,7 @@ class UserController extends Controller
     public function index()
     {
         $data['user'] = \App\Models\User::latest()->get();
-        $data['judul'] = 'Data-data User';
+        $data['judul'] = 'Data-data Admin';
         return view('user_index', $data);
     }
 

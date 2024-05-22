@@ -49,6 +49,10 @@ Route::get('logout', function () {
     return redirect('/login');
 });
 
+Route::get('/tesmbti', function () {
+    return view('tesmbti');
+});
+
 Auth::routes([
     //menghilangkan fungsi register di halaman login
     'register' => false

@@ -15,7 +15,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 form-group">
-                        <label for="pasien_id">Pilih Pasien atau <a href="/pasien/create" target="blank">Buat
+                        <label for="pasien_id">Pilih Peserta atau <a href="/pasien/create" target="blank">Buat
                                 Baru</a></label>
                         <select name="pasien_id" id="pasien_id" class="form-control">
                             @foreach ($list_pasien as $item)
@@ -27,7 +27,7 @@
                         <span class="text-danger">{{ $errors->first('pasien_id') }}</span>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label for="poli_id">Pilih Poli Tujuan</label>
+                        <label for="poli_id">Pilih Kelas/Tutoring Tujuan</label>
                         <select name="poli_id" id="poli_id" class="form-control">
                             @foreach ($list_poli as $item)
                                 <option value="{{ $item->id }}" @selected(old('poli_id') == $item->id)>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="keluhan">Keluhan</label>
+                    <label for="keluhan">Kebutuhan&Pesan</label>
                     <textarea name="keluhan" rows="3" class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">SIMPAN</button>

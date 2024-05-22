@@ -9,7 +9,7 @@
                 @csrf
                 <div class="row mt-2">
                     <div class="col-md-6 form-group ">
-                        <label for="nama">Nama Poli</label>
+                        <label for="nama">Kursus</label>
                         <input type="text" name="nama" class="form-control" value="{{ old('nama') ?? $poli->nama }}"
                             autofocus />
                         <span class="text-danger">{{ $errors->first('nama') }}</span>
@@ -22,12 +22,12 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="deskripsi">Deskripsi Poli</label>
+                    <label for="deskripsi">Deskripsi Kursus</label>
                     <textarea name="deskripsi" rows="3" class="form-control">{{ old('deskripsi') ?? $poli->deskripsi }}</textarea>
                     <span class="text-danger">{{ $errors->first('deskripsi') }}</span>
                 </div>
                 <div class="form-group mt-2">
-                    <label for="dokter_id">Pilih Dokter</label>
+                    <label for="dokter_id">Pilih Guru Pengajar</label>
                     <select name="dokter_id" class="form-control">
                         @foreach ($list_dokter as $item)
                             <option value="{{ $item->id }}" @selected($item->id == $poli->dokter_id) )>

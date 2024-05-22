@@ -8,7 +8,7 @@
                 <thead>
                     <tr>
                         <th width="1%">ID</th>
-                        <th>Nama Poli</th>
+                        <th>Nama Kelas</th>
                         <th width="15%">Biaya</th>
                         <th width="16%">Aksi</th>
                     </tr>
@@ -18,8 +18,8 @@
                         <tr>
                             <td>{{ $item->id }}</td>
                             <td>
-                                <div>Nama Poli: <b>{{ $item->nama }}</b></div>
-                                <div>Nama Dokter: <b>{{ $item->dokter->nama_dokter }}</b></div>
+                                <div>Nama Kelas : <b>{{ $item->nama }}</b></div>
+                                <div>Nama Guru Pengajar: <b>{{ $item->dokter->nama_dokter }}</b></div>
                                 <div>Deskripsi: {{ $item->deskripsi }}</div>
                             </td>
                             <td>Rp. {{ number_format($item->biaya, 0, ',', '.') }}</td>

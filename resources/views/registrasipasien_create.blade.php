@@ -5,7 +5,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        PENDAFTARAN PASIEN
+                        PENDAFTARAN PESERTA
                     </div>
                     <div class="card-body">
                         <form action="{{ route('registrasipasien.store') }}" method="POST">
@@ -13,7 +13,7 @@
                             @csrf
                             <div class="row mb-3">
                                 <div class="col-md-6 form-group ">
-                                    <label for="nama_pasien">Nama Pasien</label>
+                                    <label for="nama_pasien">Nama Peserta/Wali</label>
                                     <input type="text" name="nama_pasien" class="form-control"
                                         value="{{ old('nama_pasien') }}" autofocus />
                                     <span class="text-danger">{{ $errors->first('nama_pasien') }}</span>
@@ -46,19 +46,19 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="ss">Status Menikah</label>
+                                    <label for="ss">Status</label>
                                     <div class="form-check ml-3">
                                         <input type="radio" name="status" value="Sudah Menikah" class="form-check-input"
                                             id="sm" {{ old('status') == 'Sudah Menikah' ? 'checked' : '' }}>
                                         <label class="form-check-label" for="sm">
-                                            Sudah Menikah
+                                            Siswa
                                         </label>
                                     </div>
                                     <div class="form-check ml-3">
                                         <input type="radio" name="status" value="Belum Menikah" class="form-check-input"
                                             id="bm" {{ old('status') == 'Belum Menikah' ? 'checked' : '' }}>
                                         <label class="form-check-label" for="bm">
-                                            Belum Menikah
+                                            Mahasiswa
                                         </label>
                                     </div>
                                 </div>
@@ -69,20 +69,20 @@
                                 <span class="text-danger">{{ $errors->first('alamat') }}</span>
                             </div>
                             <div class="form-group mt-3">
-                                <label for="keluhan">Keluhan Pasien</label>
+                                <label for="keluhan">Kebutuhan Peserta</label>
                                 <textarea name="keluhan" class="form-control" rows="3">{{ old('keluhan') }}</textarea>
                                 <span class="text-danger">{{ $errors->first('keluhan') }}</span>
                             </div>
 
                             <div class="row mt-3">
                                 <div class="col-md-6 form-group">
-                                    <label for="tanggal">Rencana Tanggal Berobat</label>
+                                    <label for="tanggal">Rencana Tanggal </label>
                                     <input id="tanggal" class="form-control" type="date" name="tanggal"
                                         value="{{ date('Y-m-d') }}">
                                     <span class="text-danger">{{ $errors->first('tanggal') }}</span>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="poli_id">Pilih Poli Tujuan</label>
+                                    <label for="poli_id">Pilih Kelas/Tutoring</label>
                                     <select name="poli_id" id="poli_id" class="form-control">
                                         @foreach ($poli as $item)
                                             <option value="{{ $item->id }}" @selected(old('poli_id') == $item->id)>

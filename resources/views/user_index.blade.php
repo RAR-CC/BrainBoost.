@@ -9,7 +9,6 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Role</th>
                         <th>Nama</th>
                         <th>Username / Email</th>
                         <th>Tanggal Buat</th>
@@ -20,7 +19,6 @@
                     @foreach ($user as $item)
                         <tr>
                             <td>{{ $item->id }}</td>
-                            <td>{{ $item->role }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->email }}</td>
                             <td>{{ $item->created_at }}</td>

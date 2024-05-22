@@ -9,7 +9,7 @@
                 @csrf
                 <div class="row mb-3">
                     <div class="col-md-6 form-group ">
-                        <label for="nama_pasien">Nama Pasien</label>
+                        <label for="nama_pasien">Nama Peserta</label>
                         <input type="text" name="nama_pasien" class="form-control"
                             value="{{ old('nama_pasien') ?? $pasien->nama_pasien }}" autofocus />
                         <span class="text-danger">{{ $errors->first('nama_pasien') }}</span>
@@ -40,19 +40,19 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <label for="ss">Status Menikah</label>
+                        <label for="ss">Status </label>
                         <div class="form-check ml-3">
                             <input type="radio" name="status" value="Sudah Menikah" class="form-check-input"
                                 id="sm" {{ $pasien->status == 'Sudah Menikah' ? 'checked' : '' }}>
                             <label class="form-check-label" for="sm">
-                                Sudah Menikah
+                                Siswa
                             </label>
                         </div>
                         <div class="form-check ml-3">
                             <input type="radio" name="status" value="Belum Menikah" class="form-check-input"
                                 id="bm" {{ $pasien->status == 'Belum Menikah' ? 'checked' : '' }}>
                             <label class="form-check-label" for="bm">
-                                Belum Menikah
+                                Mahasiswa
                             </label>
                         </div>
                     </div>

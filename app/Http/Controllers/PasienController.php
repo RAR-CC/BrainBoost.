@@ -19,7 +19,7 @@ class PasienController extends Controller
         } else {
             $data['pasien'] = \App\Models\Pasien::latest()->paginate(10);
         }
-        $data['judul'] = 'Data-data Pasien';
+        $data['judul'] = 'Data-data Peserta';
         return view('pasien_index', $data);
     }
 

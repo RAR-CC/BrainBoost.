@@ -25,19 +25,19 @@
                     <dd class="col-sm-9">: {{ $administrasi->kode_administrasi }}</dd>
                 </dl>
                 <dl class="row">
-                    <dt class="col-sm-3">Tanggal Berobat</dt>
+                    <dt class="col-sm-3">Tanggal Pesan</dt>
                     <dd class="col-sm-9">: {{ $administrasi->tanggal }}</dd>
                 </dl>
                 <dl class="row">
-                    <dt class="col-sm-3">Nama Pasien</dt>
+                    <dt class="col-sm-3">Nama Peserta</dt>
                     <dd class="col-sm-9">: {{ $administrasi->pasien->nama_pasien }}</dd>
                 </dl>
                 <dl class="row">
-                    <dt class="col-sm-3">Poli Kunjungan</dt>
+                    <dt class="col-sm-3">Kelas</dt>
                     <dd class="col-sm-9">: {{ $administrasi->poli }}</dd>
                 </dl>
                 <dl class="row">
-                    <dt class="col-sm-3">Dokter</dt>
+                    <dt class="col-sm-3">Guru Pengajar</dt>
                     <dd class="col-sm-9">: {{ $administrasi->dokter->nama_dokter }}</dd>
                 </dl>
                 <dl class="row">
@@ -45,10 +45,10 @@
                     <dd class="col-sm-9">: Rp. {{ number_format($administrasi->biaya, 0, ',', '.') }}</dd>
                 </dl>
                 <dl class="row">
-                    <dt class="col-sm-3">Keluhan</dt>
+                    <dt class="col-sm-3">Kebutuhan&Pesan</dt>
                     <dd class="col-sm-9">: {{ $administrasi->keluhan }}</dd>
                 </dl>
-                <h5 class="mt-3">Hasil Diagnosa Dokter</h5>
+                <h5 class="mt-3">Hasil Penilaian Guru Pengajar</h5>
                 <div class="form-group">
                     <textarea name="diagnosis" rows="3" class="form-control" autofocus>{{ $administrasi->diagnosis }}</textarea>
                     <span class="text-danger">{{ $errors->first('diagnosis') }}</span>

@@ -52,7 +52,7 @@
                 <li class="nav-item {{ Route::is('user.*') ? 'active' : '' }} ">
                     <a class="nav-link" href="/user">
                         <i class="fas fa -fw fa-users"></i>
-                        <span>Data User</span></a>
+                        <span>Data Admin</span></a>
                 </li>
             @endif
             <li class="nav-item {{ Route::is('profil.*') ? 'active' : '' }} ">
@@ -65,7 +65,7 @@
                 <li class="nav-item {{ Route::is('administrasi.*') ? 'active' : '' }} ">
                     <a class="nav-link" href="/administrasi">
                         <i class="fas fa -fw fa-users"></i>
-                        <span>Administrasi Pasien</span></a>
+                        <span>Administrasi Peserta</span></a>
                 </li>
             @endif
 
@@ -81,7 +81,7 @@
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                         aria-expanded="true" aria-controls="collapseTwo">
                         <i class="fas fa-fw fa-users"></i>
-                        <span>Data Klinik</span>
+                        <span>Data BrainBoost</span>
                     </a>
                     <div id="collapseTwo"
                         class="collapse
@@ -90,21 +90,21 @@
                 {{ Route::is('poli.*') ? 'show' : '' }}"
                         aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">Data Pasien:</h6>
+                            <h6 class="collapse-header">Data Peserta :</h6>
                             <a class="collapse-item {{ Route::is('pasien.create') ? 'active' : '' }}"
-                                href="/pasien/create">Tambah Pasien</a>
+                                href="/pasien/create">Tambah Peserta</a>
                             <a class="collapse-item {{ Route::is('pasien.index') ? 'active' : '' }}" href="/pasien">
-                                Data Pasien</a>
-                            <h6 class="collapse-header">Data Dokter:</h6>
+                                Data Peserta</a>
+                            <h6 class="collapse-header">Data Guru Pengajar :</h6>
                             <a class="collapse-item {{ Route::is('dokter.create') ? 'active' : '' }}"
-                                href="/dokter/create">Tambah Dokter</a>
+                                href="/dokter/create">Tambah Guru Pengajar</a>
                             <a class="collapse-item {{ Route::is('dokter.index') ? 'active' : '' }}" href="/dokter">
-                                Data Dokter</a>
-                            <h6 class="collapse-header">Data Poli:</h6>
+                                Data Guru Pengajar</a>
+                            <h6 class="collapse-header">Data Kelas :</h6>
                             <a class="collapse-item {{ Route::is('poli.create') ? 'active' : '' }}"
-                                href="/poli/create">Tambah Poli</a>
+                                href="/poli/create">Tambah Kelas</a>
                             <a class="collapse-item {{ Route::is('poli.index') ? 'active' : '' }}" href="/poli">
-                                Data Poli</a>
+                                Data Kelas</a>
                             <h6 class="collapse-header">Data Obat:</h6>
                             <a class="collapse-item" href="/obat/create">Tambah Obat</a>
                             <a class="collapse-item" href="/obat">
@@ -169,9 +169,9 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Data Laporan:</h6>
                         {{-- <a class="collapse-item" href="{{ route('pasien.laporan') }}" target="_blank">Laporan
-                            Pasien</a>
+                            Peserta</a>
                         <a class="collapse-item" href="{{ route('dokter.laporan') }}" target="_blank">Laporan
-                            Dokter</a> --}}
+                            Guru Pengajar</a> --}}
                         <a class="collapse-item" href="/laporan/administrasi">Laporan Administrasi</a>
                     </div>
                 </div>
@@ -337,7 +337,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Your Website Hexranger</span>
                     </div>
                 </div>
             </footer>

@@ -6,12 +6,12 @@
             {{ $judul }}
         </div>
         <div class="card-body">
-            <a href="/pasien/create" class="btn btn-primary mb-2">Tambah Pasien</a>
+            <a href="/pasien/create" class="btn btn-primary mb-2">Tambah Peserta</a>
             <div class="row mb-2">
                 <div class="col">
                     <form method="GET">
                         <div class="input-group">
-                            <input type="text" name="q" class="form-control" placeholder="Cari data pasien"
+                            <input type="text" name="q" class="form-control" placeholder="Cari data peserta"
                                 value="{{ request('q') }}">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-primary">Cari</button>

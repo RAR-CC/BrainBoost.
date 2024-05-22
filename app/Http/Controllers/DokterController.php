@@ -13,7 +13,7 @@ class DokterController extends Controller
     public function index()
     {
         $data['dokter'] = \App\Models\Dokter::latest()->get();
-        $data['judul'] = 'Data-data Dokter';
+        $data['judul'] = 'Data-data Guru Pengajar';
         return view('dokter_index', $data);
     }
 
@@ -53,7 +53,7 @@ class DokterController extends Controller
             //simpan data dokter sebagai data user
             $user = new \App\Models\User();
             $user->name = $validasiData['nama_dokter'];
-            $user->email = $validasiData['nomor_hp'] . '@dokter.com';
+            $user->email = $validasiData['nomor_hp'] . '@guru.com';
             $user->password = bcrypt($request->password);
             $user->role = 'dokter';
             $user->save();
