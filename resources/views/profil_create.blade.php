@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">PROFIL SAYA - {{ strtoupper(auth()->user()->name) }}</div>
+        <div class="card-header"style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">PROFIL SAYA - {{ strtoupper(auth()->user()->name) }}</div>
         <div class="card-body">
             <form action="/profil" method="POST" enctype="multipart/form-data">
                 @method('POST')

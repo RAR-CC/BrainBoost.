@@ -2,18 +2,18 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">Tambah Guru Pengajar</div>
+        <div class="card-header" style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">Tambah Mentor </div>
         <div class="card-body">
             <form action="/dokter" method="POST" enctype="multipart/form-data">
                 @method('POST')
                 @csrf
                 <div class="form-group mt-1">
-                    <label for="nama_dokter">Nama Guru Pengajar</label>
+                    <label for="nama_dokter">Nama Mentor</label>
                     <input class="form-control" type="text" name="nama_dokter" value="{{ old('nama_dokter') }}" autofocus>
                     <span class="text-danger">{{ $errors->first('nama_dokter') }}</span>
                 </div>
                 <div class="form-group mt-3">
-                    <label for="foto">Foto Diri Guru</label>
+                    <label for="foto">Foto Mentor</label>
                     <input class="form-control" type="file" name="foto" value="{{ old('foto') }}">
                     <span class="text-danger">{{ $errors->first('foto') }}</span>
                 </div>
@@ -22,8 +22,7 @@
                     <select name="spesialis" class="form-control">
                         <option value="Ekstrovert" @selected(old('spesialis') == 'Ekstrovert')> Spesialis Ekstrovert</option>
                         <option value="Introvert" @selected(old('spesialis') == 'Introvert')> Spesialis Introvert</option>
-                        <option value="Intuitif" @selected(old('spesialis') == 'Intuitif')> Spesialis Intuitif</option>
-                        <option value="Fisika" @selected(old('spesialis') == 'Fisika')> Spesialis Fisika</option>
+                        <option value="" @selected(old('spesialis') == 'Intuitif')> Spesialis Intuitif</option>
                     </select>
                     <span class="text-danger">{{ $errors->first('spesialis') }}</span>
                 </div>

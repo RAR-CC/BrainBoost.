@@ -1,11 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<style>
+    body{
+        background: url("../medilab/assets/img/bglogin.jpg");
+        background-size: cover;
+    }
+</style>
+<div class="container" style="margin-top: 160px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header"style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

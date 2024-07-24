@@ -209,7 +209,17 @@ function tampilkan(){
         var ket_perceiving = keterangan(hasil[8]);
         document.getElementById("keterangan-perceiving").innerHTML = ket_perceiving;
 
-        alert("Tes berhasil dilakukan!");
+        swal({
+
+            title: "Berhasil!",
+
+            text: "Yey!!!! Test Berhasil Kamu bisa cek Hasilnya",
+
+            icon: "success",
+
+            button: true
+
+        });
         hide();
     }
 }

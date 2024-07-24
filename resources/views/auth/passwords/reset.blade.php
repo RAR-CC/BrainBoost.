@@ -1,11 +1,16 @@
 @extends('layouts.app')
-
+<style>
+    body{
+        background: url("../medilab/assets/img/bglogin.jpg");
+        background-size: cover;
+    }
+</style>
 @section('content')
-<div class="container">
+<div class="container"style="margin-top: 200px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+                <div class="card-header"style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('password.update') }}">

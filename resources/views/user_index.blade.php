@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">{{ $judul }}</div>
+        <div class="card-header" style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">{{ $judul }}</div>
         <div class="card-body">
             <a href="/user/create" class="btn btn-primary mb-2">Tambah Data</a>
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th>ID</th>
+                        <th>No</th>
                         <th>Nama</th>
                         <th>Username / Email</th>
                         <th>Tanggal Buat</th>
@@ -18,7 +18,7 @@
                 <tbody>
                     @foreach ($user as $item)
                         <tr>
-                            <td>{{ $item->id }}</td>
+                            <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->email }}</td>
                             <td>{{ $item->created_at }}</td>

@@ -4,7 +4,7 @@
         <div class="row justify-content-center">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header"style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">
                         PENDAFTARAN PESERTA
                     </div>
                     <div class="card-body">
@@ -86,7 +86,7 @@
                                     <select name="poli_id" id="poli_id" class="form-control">
                                         @foreach ($poli as $item)
                                             <option value="{{ $item->id }}" @selected(old('poli_id') == $item->id)>
-                                                Poli {{ $item->nama }} - Biaya
+                                                 Kelas {{ $item->nama }} - Biaya
                                                 {{ number_format($item->biaya, 0, ',', '.') }}
                                             </option>
                                         @endforeach

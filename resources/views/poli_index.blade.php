@@ -1,13 +1,13 @@
 @extends('layouts.sbadmin2')
 @section('content')
     <div class="card">
-        <div class="card-header"> {{ $judul }} </div>
+        <div class="card-header"style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;"> {{ $judul }} </div>
         <div class="card-body">
             <a href="/poli/create" class="btn btn-primary mb-3">Tambah Data</a>
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th width="1%">ID</th>
+                        <th>No</th>
                         <th>Nama Kelas</th>
                         <th width="15%">Biaya</th>
                         <th width="16%">Aksi</th>
@@ -16,10 +16,10 @@
                 <tbody>
                     @foreach ($poli as $item)
                         <tr>
-                            <td>{{ $item->id }}</td>
+                            <td>{{ $loop->iteration }}</td>
                             <td>
                                 <div>Nama Kelas : <b>{{ $item->nama }}</b></div>
-                                <div>Nama Guru Pengajar: <b>{{ $item->dokter->nama_dokter }}</b></div>
+                                <div>Nama Mentor: <b>{{ $item->dokter->nama_dokter }}</b></div>
                                 <div>Deskripsi: {{ $item->deskripsi }}</div>
                             </td>
                             <td>Rp. {{ number_format($item->biaya, 0, ',', '.') }}</td>

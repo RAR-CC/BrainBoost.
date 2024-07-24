@@ -40,7 +40,7 @@
                                         <dt class="col-md-4">Kelas </dt>
                                         <dd class="col-md-8">: {{ $item->poli }}</dd>
 
-                                        <dt class="col-md-4">Guru Pengajar</dt>
+                                        <dt class="col-md-4">Mentor </dt>
                                         <dd class="col-md-8">: {{ $item->dokter->nama_dokter }}</dd>
                                     </dl>
 
@@ -48,7 +48,7 @@
                                 <td>
                                     <div><strong>Kebutuhan&Pesan</strong> : {{ $item->keluhan }}</div>
                                     <div>
-                                        <strong>Penilaian Guru Pengajar :</strong>
+                                        <strong>Penilaian Mentor :</strong>
                                         {{ $item->diagnosis }}
                                     </div>
                                 </td>

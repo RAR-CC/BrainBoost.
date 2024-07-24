@@ -13,7 +13,7 @@ class DokterController extends Controller
     public function index()
     {
         $data['dokter'] = \App\Models\Dokter::latest()->get();
-        $data['judul'] = 'Data-data Guru Pengajar';
+        $data['judul'] = 'Data-data Mentor Pengajar';
         return view('dokter_index', $data);
     }
 

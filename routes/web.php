@@ -36,8 +36,12 @@ Route::middleware(Authenticate::class)->group(function () {
     Route::resource('profil', ProfilController::class);
     //buat middleware dengan perintah php artisan make:middleware Admin lalu modif kodenya \App\Http\Middleware\Admin.php
     Route::resource('poli', PoliController::class)->middleware(Admin::class);
+    Route::resource('kelas', PoliController::class)->middleware(Admin::class);
+    Route::redirect('/poli', '/kelas');
     Route::resource('dokter', DokterController::class)->middleware(Admin::class);
     Route::resource('pasien', PasienController::class)->middleware(Admin::class);
+    Route::resource('peserta', PasienController::class)->middleware(Admin::class);
+    Route::redirect('/pasien', '/peserta');
     Route::resource('obat', ObatController::class)->middleware(Admin::class);
     Route::resource('administrasi', AdministrasiController::class);
     Route::get('laporan/administrasi', [LaporanAdmController::class, 'index'])->name('laporan.adm');

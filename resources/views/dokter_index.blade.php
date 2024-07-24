@@ -2,14 +2,13 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">{{ $judul }}</div>
+        <div class="card-header"style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">{{ $judul }}</div>
         <div class="card-body">
-            <a href="/dokter/create" class="btn btn-primary mb-2">Tambah Guru Pengajar</a>
+            <a href="/dokter/create" class="btn btn-primary mb-2">Tambah Mentor</a>
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Kode</th>
+                        <th>No</th>
                         <th>Nama</th>
                         <th>Total ADM</th>
                         <th width="22%">Aksi</th>
@@ -18,8 +17,7 @@
                 <tbody>
                     @foreach ($dokter as $item)
                         <tr>
-                            <td>{{ $item->id }}</td>
-                            <td>{{ $item->kode_dokter }}</td>
+                            <td>{{ $loop->iteration }}</td>
                             <td>
                                 <div class="row">
                                     @if ($item->foto != '')
@@ -54,6 +52,7 @@
                                     @csrf
                                     <button type="submit" class="btn btn-danger">Hapus</button>
                                 </form>
+                                <a href="https://wa.me/6285811535315?text=Hi%20Qiscus" class="btn btn-success" target="_blank" style="margin-top: 10px;">Chat</a>
                             </td>
                         </tr>
                     @endforeach

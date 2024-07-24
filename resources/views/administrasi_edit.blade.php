@@ -12,7 +12,7 @@
         }
     </style>
     <div class="card">
-        <div class="card-header">
+        <div class="card-header" style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">
             Edit Administrasi {{ $administrasi->kode_administrasi }}
         </div>
         <div class="card-body">
@@ -37,7 +37,7 @@
                     <dd class="col-sm-9">: {{ $administrasi->poli }}</dd>
                 </dl>
                 <dl class="row">
-                    <dt class="col-sm-3">Guru Pengajar</dt>
+                    <dt class="col-sm-3">Mentor Pengajar</dt>
                     <dd class="col-sm-9">: {{ $administrasi->dokter->nama_dokter }}</dd>
                 </dl>
                 <dl class="row">
@@ -48,7 +48,7 @@
                     <dt class="col-sm-3">Kebutuhan&Pesan</dt>
                     <dd class="col-sm-9">: {{ $administrasi->keluhan }}</dd>
                 </dl>
-                <h5 class="mt-3">Hasil Penilaian Guru Pengajar</h5>
+                <h5 class="mt-3">Hasil Penilaian Mentor Pengajar</h5>
                 <div class="form-group">
                     <textarea name="diagnosis" rows="3" class="form-control" autofocus>{{ $administrasi->diagnosis }}</textarea>
                     <span class="text-danger">{{ $errors->first('diagnosis') }}</span>

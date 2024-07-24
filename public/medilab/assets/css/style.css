@@ -80,7 +80,8 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1977cc;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); 
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 1.00);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -185,8 +186,11 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+
 #header .logo a {
-  color: #2c4964;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); 
+  background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
 }
 
 #header .logo img {
@@ -199,6 +203,7 @@ h6 {
 .appointment-btn {
   margin-left: 25px;
   background: #1977cc;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.50);
   color: #fff;
   border-radius: 50px;
   padding: 8px 25px;
@@ -209,7 +214,8 @@ h6 {
 }
 
 .appointment-btn:hover {
-  background: #166ab5;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.50);
   color: #fff;
 }
 
@@ -478,11 +484,15 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  color: white;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
+  background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
 }
 
 #hero h2 {
-  color: white;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); 
+  background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
   margin: 10px 0 0 0;
   font-size: 24px;
 }
@@ -503,7 +513,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #3291e6;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
 }
 
 @media (min-width: 1024px) {
@@ -660,7 +670,8 @@ section {
 .why-us .content {
   padding: 30px;
   background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
-  border-radius: 4px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 1.00);
   color: #fff;
 }
 
@@ -696,7 +707,7 @@ section {
   text-align: center;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.80);
   padding: 40px 30px;
   width: 100%;
 }
@@ -748,6 +759,7 @@ section {
   border: 2px solid #8dc2f1;
   border-radius: 50px;
   transition: 0.5s;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.50);
 }
 
 .about .icon-box .icon i {
@@ -756,7 +768,7 @@ section {
 }
 
 .about .icon-box:hover .icon {
-  background: #1977cc;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); 
   border-color: #1977cc;
 }
 
@@ -787,9 +799,13 @@ section {
 }
 
 .about .video-box {
-  background: url("../img/Brain/womanbg.jpg") center center no-repeat;
+  background: url("../img/Brain/2149211073.jpg") center center no-repeat;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 1.50);
   background-size: cover;
   min-height: 500px;
+  border-radius: 12px;
+  border: 5px solid #555;
+  border-color: #1977cc;
 }
 
 .about .play-btn {
@@ -858,6 +874,148 @@ section {
   animation: none;
   border-radius: 0;
 }
+.about1 .video-box1 {
+  background: url("../img/fotoVideo.jpeg") center center no-repeat;
+  justify-content: center;
+  margin-left: 8px;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  background-size: cover;
+  border-radius: 12px;
+  border: 5px solid #555;
+  border-color: #1977cc;
+}
+.about1 .video-box2 {
+  background: url("../img/fotovideocourse2.jpg") center center no-repeat;
+  justify-content: center;
+  margin-left: 8px;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  background-size: cover;
+  border-radius: 12px;
+  border: 5px solid #555;
+  border-color: #1977cc;
+}
+.about1 .video-box3 {
+  background: url("../img/FotoVideo3.jpg") center center no-repeat;
+  justify-content: center;
+  margin-left: 8px;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  background-size: cover;
+  border-radius: 12px;
+  border: 5px solid #555;
+  border-color: #1977cc;
+}
+.about1 .video-box4 {
+  background: url("../img/fotovideocourse3.jpg") center center no-repeat;
+  justify-content: center;
+  margin-left: 8px;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  background-size: cover;
+  border-radius: 12px;
+  border: 5px solid #555;
+  border-color: #1977cc;
+}
+.about1 .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#1977cc 50%, rgba(25, 119, 204, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  overflow: hidden;
+}
+
+.about1 .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.about1 .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(25, 119, 204, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.about1 .play-btn:hover::after {
+  border-left: 15px solid #1977cc;
+  transform: scale(20);
+}
+
+.about1 .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+.about1 .content p {
+  margin-bottom: 30px;
+}
+.about1 .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.80);
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.about1 .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #1977cc;
+  margin-bottom: 30px;
+}
+
+.about1 .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.about1 .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
+}
 
 @keyframes pulsate-btn {
   0% {
@@ -871,6 +1029,7 @@ section {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -883,6 +1042,8 @@ section {
 .counts .count-box {
   padding: 30px 30px 25px 30px;
   width: 100%;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 1.50);
+  border-radius: 10px;
   position: relative;
   text-align: center;
   background: #fff;
@@ -924,13 +1085,15 @@ section {
 .services{
   background: linear-gradient(180deg, #FFF 8.35%, #B0E7FF 60.96%, #FFF 86.72%);
   background-size: cover;
+  
 }
 .services .icon-box {
   text-align: center;
   background: white;
-  border: 1px solid #1977cc;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.50);
+  border-radius: 10px;
 }
 
 .services .icon-box .icon {
@@ -982,7 +1145,7 @@ section {
 }
 
 .services .icon-box:hover {
-  background: #1977cc;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); 
   border-color: #1977cc;
 }
 
@@ -1002,6 +1165,74 @@ section {
 .services .icon-box:hover p {
   color: #fff;
 }
+.button2 {
+  justify-content: center;
+  transition: all 0.2s ease-in;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  color: black;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
+}
+
+.button2:hover:before {
+  top: -35%;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
 
 /*--------------------------------------------------------------
 # Appointments
@@ -1178,9 +1409,10 @@ section {
   position: relative;
   box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);
   background: white;
-  border: 1px solid #1977cc;
   padding: 30px;
   border-radius: 10px;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.50);
+  border-radius: 15px;
 }
 
 .doctors .member .pic {
@@ -1247,7 +1479,7 @@ section {
   border-radius: 50px;
   width: 32px;
   height: 32px;
-  background: #a0bcd5;
+  background: #1977cc;
 }
 
 .doctors .member .social a i {
@@ -1257,7 +1489,7 @@ section {
 }
 
 .doctors .member .social a:hover {
-  background: #1977cc;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
 }
 
 .doctors .member .social a+a {
@@ -1367,7 +1599,8 @@ section {
   padding: 30px 30px 30px 60px;
   margin: 30px 15px;
   min-height: 200px;
-  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.08);
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.50);
+  border-radius: 10px;
   position: relative;
   background: #fff;
 }
@@ -1376,6 +1609,7 @@ section {
   width: 90px;
   border-radius: 10px;
   border: 6px solid #fff;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.50);
   position: absolute;
   left: -45px;
 }
@@ -1492,6 +1726,7 @@ section {
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.50);
 }
 
 .contact .info h4 {
@@ -1517,8 +1752,9 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #1977cc;
   color: #fff;
+  box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
 }
 
 .contact .php-email-form {
@@ -1596,7 +1832,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #1c84e3;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
 }
 
 @keyframes animate-loading {
@@ -1615,7 +1851,7 @@ section {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #f1f7fd;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
 }
 
 #footer .footer-top {
@@ -1735,7 +1971,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #1c84e3;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
 }
 
 #footer .credits {
@@ -1760,7 +1996,8 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #1c84e3;
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 0.50);
   color: #fff;
   text-decoration: none;
 }
@@ -1785,3 +2022,76 @@ box-shadow: 0 9px #999;
 box-shadow: 0 3px #666;
 transform: translateY(4px);
 }
+.floating {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 60px;
+  right: 40px;
+  background-color: #1977cc;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  }
+  
+  .fab-icon {
+  margin-top: 16px;
+  }
+/* Dropdown Button */
+.dropbtn {
+  margin-left: 25px;
+  background-color: transparent;
+  color: #1977cc;
+  border-radius: 50px;
+  border: white;
+  padding: 3px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 16px;
+  display: inline-block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  width: 150px;
+  height: 130px;
+  display: none;
+  position: absolute;
+  background: #1977cc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 12px rgba(44, 73, 100, 1.00);
+  min-width: 160px;
+  z-index: 1;
+  padding: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+

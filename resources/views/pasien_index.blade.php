@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">
+        <div class="card-header" style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">
             {{ $judul }}
         </div>
         <div class="card-body">
@@ -23,8 +23,7 @@
             <table class="table table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Kode</th>
+                        <th>No</th>
                         <th>Nama</th>
                         <th>Nomor HP</th>
                         <th>Tanggal Buat</th>
@@ -34,8 +33,7 @@
                 <tbody>
                     @forelse ($pasien as $item)
                         <tr>
-                            <td>{{ $item->id }}</td>
-                            <td>{{ $item->kode_pasien }}</td>
+                            <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->nama_pasien }}</td>
                             <td>{{ $item->nomor_hp }}</td>
                             <td>{{ $item->created_at }}</td>
@@ -49,6 +47,7 @@
                                     @csrf
                                     <button type="submit" class="btn btn-danger">Hapus</button>
                                 </form>
+                                <a href="https://wa.me/6285811535315?text=Hi%20Qiscus" class="btn btn-success" target="_blank">Chat</a>
                             </td>
                         </tr>
                     @empty

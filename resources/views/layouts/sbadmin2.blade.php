@@ -10,6 +10,8 @@
     <meta name="author" content="">
 
     <title>{{ env('APP_NAME') }}</title>
+    <link href="/medilab/assets/img/faviconBrain.png" rel="icon">
+    <link href="/medilab/assets/img/icontouchbrain.png" rel="apple-touch-icon">
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('sbadmin2') }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -29,7 +31,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" style="background: linear-gradient(180deg, #011469 0%, #0083FF 67.09%, #00E0FF 134.19%); color: white;">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
@@ -95,20 +97,16 @@
                                 href="/pasien/create">Tambah Peserta</a>
                             <a class="collapse-item {{ Route::is('pasien.index') ? 'active' : '' }}" href="/pasien">
                                 Data Peserta</a>
-                            <h6 class="collapse-header">Data Guru Pengajar :</h6>
+                            <h6 class="collapse-header">Data Mentor :</h6>
                             <a class="collapse-item {{ Route::is('dokter.create') ? 'active' : '' }}"
-                                href="/dokter/create">Tambah Guru Pengajar</a>
+                                href="/dokter/create">Tambah Mentor</a>
                             <a class="collapse-item {{ Route::is('dokter.index') ? 'active' : '' }}" href="/dokter">
-                                Data Guru Pengajar</a>
+                                Data Mentor</a>
                             <h6 class="collapse-header">Data Kelas :</h6>
                             <a class="collapse-item {{ Route::is('poli.create') ? 'active' : '' }}"
                                 href="/poli/create">Tambah Kelas</a>
                             <a class="collapse-item {{ Route::is('poli.index') ? 'active' : '' }}" href="/poli">
                                 Data Kelas</a>
-                            <h6 class="collapse-header">Data Obat:</h6>
-                            <a class="collapse-item" href="/obat/create">Tambah Obat</a>
-                            <a class="collapse-item" href="/obat">
-                                Data Obat</a>
                         </div>
                     </div>
                 </li>
@@ -171,7 +169,7 @@
                         {{-- <a class="collapse-item" href="{{ route('pasien.laporan') }}" target="_blank">Laporan
                             Peserta</a>
                         <a class="collapse-item" href="{{ route('dokter.laporan') }}" target="_blank">Laporan
-                            Guru Pengajar</a> --}}
+                            Mentor</a> --}}
                         <a class="collapse-item" href="/laporan/administrasi">Laporan Administrasi</a>
                     </div>
                 </div>
@@ -268,8 +266,8 @@
                                         <div>
                                             <div class="small text-gray-500">{{ $item->tanggal->format('d F Y') }}
                                             </div>
-                                            <span class="font-weight-bold">{{ $item->pasien->nama_pasien }} berobat ke
-                                                poli {{ $item->poli }}</span>
+                                            <span class="font-weight-bold">{{ $item->pasien->nama_pasien }} Mendaftar ke
+                                                Course {{ $item->poli }}</span>
                                         </div>
                                     </a>
                                 @empty
@@ -305,12 +303,12 @@
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="/profil/create">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
+                                    Data Diri
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/logout">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
+                                    Keluar
                                 </a>
                             </div>
                         </li>
@@ -334,7 +332,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+            <footer class="sticky-footer bg-white" >
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Your Website Hexranger</span>

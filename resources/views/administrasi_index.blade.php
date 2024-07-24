@@ -10,7 +10,7 @@
         }
     </style>
     <div class="card">
-        <div class="card-header">
+        <div class="card-header" style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); color: white;">
             {{ $judul }}
         </div>
         <div class="card-body">
@@ -21,7 +21,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>ID</th>
+                            <th>No</th>
                             <th width="38%">Data Peserta</th>
                             <th>Kebutuhan</th>
                             <th>Biaya</th>
@@ -32,7 +32,7 @@
                     <tbody>
                         @foreach ($administrasi as $item)
                             <tr>
-                                <td>{{ $item->id }}</td>
+                                <td>{{ $loop->iteration }}</td>
                                 <td>
                                     <dl class="row">
                                         <dt class="col-md-4">Nama Peserta</dt>
@@ -44,7 +44,7 @@
                                         <dt class="col-md-4">Kelas Pilihan</dt>
                                         <dd class="col-md-8">: {{ $item->poli }}</dd>
 
-                                        <dt class="col-md-4">Guru Pengajar</dt>
+                                        <dt class="col-md-4">Mentor Pengajar</dt>
                                         <dd class="col-md-8">: {{ $item->dokter->nama_dokter }}</dd>
                                     </dl>
 
@@ -66,6 +66,7 @@
                                     <a href="/administrasi/{{ $item->id }}/edit" class="btn btn-primary">
                                         Penilaian
                                     </a>
+                                    <a href="https://wa.me/6285811535315?text=Hi%20Qiscus" class="btn btn-success" target="_blank">Chat</a>
                                     @if (auth()->user()->role == 'admin')
                                         <form action="{{ route('administrasi.destroy', $item->id) }}" method="POST"
                                             class="d-inline"

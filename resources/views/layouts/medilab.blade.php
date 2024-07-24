@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="/medilab/assets/img/favicon.png" rel="icon">
-    <link href="/medilab/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="/medilab/assets/img/faviconBrain.png" rel="icon">
+    <link href="/medilab/assets/img/icontouchbrain.png" rel="apple-touch-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -29,6 +29,10 @@
     <link href="/medilab/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="/medilab/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="/medilab/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
+
 
     <!-- Template Main CSS File -->
     <link href="/medilab/assets/css/style.css" rel="stylesheet">
@@ -48,7 +52,7 @@
     <div id="topbar" class="d-flex align-items-center fixed-top">
         <div class="container d-flex justify-content-between">
             <div class="contact-info d-flex align-items-center">
-                <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+                <i class="bi bi-envelope"></i> <a href="mailto:hello@example.com">BrianBoost@gmail.com</a>
                 <i class="bi bi-phone"></i> +1 5589 55488 55
             </div>
             <div class="d-none d-lg-flex social-links align-items-center">
@@ -63,6 +67,9 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center">
+            <div class="logoicon">
+                <img src="/medilab/assets/img/iconBrain1.png" alt="">
+            </div>
 
             <h1 class="logo me-auto"><a href="index.html">BrainBoost</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
@@ -70,15 +77,20 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
                     <li><a class="nav-link scrollto" href="#services">Kelas</a></li>
-                    <li><a class="nav-link scrollto" href="#doctors">Guru Pengajar</a></li>
+                    <li><a class="nav-link scrollto" href="#doctors">Mentor Pengajar</a></li>
                     <li><a class="nav-link scrollto" href="#departments">Artikel</a></li>
-                    <li><a class="nav-link scrollto" href="/login">Login Admin</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
+            <div class="dropdown">
+                <button class="dropbtn">Masuk</button>
+                    <div class="dropdown-content">
+                        <a href="/login">Admin</a>
+                        <a href="/login">Mentor</a>
+                    </div>
+            </div>
 
             <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Register</span>
                 Peserta</a>
@@ -89,11 +101,9 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
-            <h1 style="
-            background: linear-gradient(90deg, #1A89F2 12.5%, #50F2B1 55.5%, #5162FA 91.5%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);">Welcome to BrainBoost</h1>
-            <h2 style="
-            background: linear-gradient(90deg, #1A89F2 12.5%, #50F2B1 55.5% ); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);">We are team Hexranger</h2>
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <h1>Selamat Datang Di BrainBoost</h1>
+            <h2>Kami Hexranger Incernated</h2>
+            <a href="#about" class="btn-get-started scrollto">Mulai Kelas</a>
         </div>
     </section><!-- End Hero -->
 
@@ -111,7 +121,7 @@
                             BrainBoost menawarkan tes kepribadian MBTI yang komprehensif untuk mengungkap tipe kepribadian dan karakteristik unik Anda. 
                             Hasil tes akan memberi wawasan mendalam tentang kekuatan, kelemahan, serta cara terbaik dalam berinteraksi dan mengambil keputusan sesuai dengan profil diri Anda.</p>
                             <div class="text-center">
-                                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                                <a href="#" class="more-btn">Lihat lebih <i class="bx bx-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -124,7 +134,7 @@
                                         <h4>Tes MBTI</h4>
                                         <p>Tes MBTI BrainBoost ungkap karakteristik diri, kekuatan, kelemahan dan gaya berinteraksi.</p>
                                             <div class="text-center">
-                                            <a href="/tesmbti" class="appointment-btn" style="margin-left: -1px">Learn More</a>
+                                            <a href="/tesmbti" class="appointment-btn" style="margin-left: -1px">Lihat Lebih</a>
                                             </div>
                                     </div>
                                 </div>
@@ -134,17 +144,17 @@
                                         <h4>Jenis Tutoring</h4>
                                         <p>Terdapat berbagai kelas yang dapat diikuti diberbagai usia, siapapun dimanapun semua punya kesempatan</p>
                                             <div class="nav-link scrollto" href="#services">
-                                                <a href="#services" class="appointment-btn" style="margin-left: -1px">Learn More </a>
+                                                <a href="#services" class="appointment-btn" style="margin-left: -1px">Lihat Lebih </a>
                                             </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-images"></i>
-                                        <h4>Galery</h4>
+                                        <h4>Galeri</h4>
                                         <p>Momen-momen berharga siswa yang telah meraih prestasi melalui perjalanan belajar bersama kami.</p>
                                             <div  class="nav-link scrollto" href="#gallery">
-                                                <a href="#gallery" class="appointment-btn" style="margin-left: -1px">Learn More </a>
+                                                <a href="#gallery" class="appointment-btn" style="margin-left: -1px">Lihat Lebih </a>
                                             </div>
                                     </div>
                                 </div>
@@ -155,16 +165,25 @@
 
             </div>
         </section><!-- End Why Us Section -->
-        <section id="about" class="about">
+        <section>
+        <a href="https://wa.me/6281287107157?text=Hi%20Ada%20Yang%20Bisa%20Dibantu?" class="floating" target="_blank" style="background: linear-gradient(189deg, #00E0FF -2.63%, #0083FF 45.96%, #011469 88.59%); box-shadow: 0px 2px 12px rgba(44, 73, 100, 1.00);">
+            <i class="fab fa-whatsapp fab-icon"></i>
+        </a>
+        </section>
+    <section id="about" class="about">
       <div class="container">
 
         <div class="row">
+            <div class="section-title" data-aos="zoom-in-down">
+                    <h2>Tentang Kami</h2>
+                    <p class="" data-aos="zoom-in-up" data-aos-duration="1000">Informasi Tentang Kami yang mungkin anda cari.</p>
+                </div>
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" data-aos="fade-right" data-aos-duration="1000">
-            <a href="https://www.youtube.com/watch?v=309beMyhXtg" class="glightbox play-btn mb-4"></a>
+            <a href="https://www.youtube.com/watch?v=RQSFAvkqnBg" class="glightbox play-btn mb-4"></a>
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left" data-aos-duration="1200">
-            <h3 class=""data-aos="fade-left" data-aos-duration="1400">BENEFITS MENJADI BAGIAN DARI BRAINBOOST</h3>
+            <h3 class=""data-aos="fade-left" data-aos-duration="1400">BENEFIT MENJADI BAGIAN DARI BRAINBOOST</h3>
             <p class="" data-aos="fade-left" data-aos-duration="1500">Brainboost lebih dari sekadar tempat penyedia tutoring, berikut adalah benefit yang sekiranya kalian dapatkan selama bersama Brainboost.</p>
 
             <div class="icon-box" data-aos="fade-left" data-aos-duration="1700">
@@ -175,19 +194,18 @@
 
             <div class="icon-box" data-aos="fade-left" data-aos-duration="1900">
               <div class="icon" data-aos="fade-left" data-aos-duration="1900"><i class="bx bx-gift"></i></div>
-              <h4 class="title" data-aos="fade-left" data-aos-duration="1950"><a href="">Networking</a></h4>
+              <h4 class="title" data-aos="fade-left" data-aos-duration="1950"><a href="">Memperluas Jaringan Dan Wawasan</a></h4>
               <p class="description" data-aos="fade-left" data-aos-duration="2000">Metode kami dilakukan secara offline dengan tingkat sortir yang tinggi jadi kemungkinan kalian bertemu “like minded people” semakin melonjak!</p>
             </div>
 
             <div class="icon-box" data-aos="fade-left" data-aos-duration="2200">
               <div class="icon" data-aos="fade-left" data-aos-duration="2200"><i class="bx bx-atom"></i></div>
-              <h4 class="title" data-aos="fade-left" data-aos-duration="2200"><a href="">Cost Efficient</a></h4>
+              <h4 class="title" data-aos="fade-left" data-aos-duration="2200"><a href="">Efesiensi Biaya</a></h4>
               <p class="description" data-aos="fade-left" data-aos-duration="2200">Brainboost memiliki ROI yang tinggi karena metode kami tidak memakan waktu banyak jadi kalian menerima benefit yang luar biasa dalam waktu yang singkat.</p>
             </div>
 
           </div>
         </div>
-
       </div>
     </section>
 
@@ -199,42 +217,40 @@
 
                     <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-duration="1000">
                         <div class="count-box">
-                            <i class="fas fa-user-md"></i>
+                            <i style='font-size:24px' class='fas'>&#xf2c2;</i>
                             <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
                                 class="purecounter"></span>
-                            <p>Guru Pengajar</p>
+                            <p>Mentor Pengajar</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 mt-5 mt-md-0" data-aos="fade-up" data-aos-duration="1200">
                         <div class="count-box">
-                            <i class="far fa-hospital"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                            <i style='font-size:24px' class='fas'>&#xf64f;</i>
+                            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
                                 class="purecounter"></span>
-                            <p>Kelas</p>
+                            <p>Ruang Kelas</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0" data-aos="fade-up" data-aos-duration="1400">
                         <div class="count-box">
-                            <i class="fas fa-flask"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+                            <i style='font-size:24px' class='fas'>&#xf5da;</i>
+                            <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="1"
                                 class="purecounter"></span>
-                            <p>Research Labs</p>
+                            <p>Peserta</p>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 mt-5 mt-lg-0" data-aos="fade-up" data-aos-duration="1600">
                         <div class="count-box">
-                            <i class="fas fa-award"></i>
+                            <i class="fas fa-award" style='font-size:24px'></i>
                             <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
                                 class="purecounter"></span>
-                            <p>Awards</p>
+                            <p>Penghargaan</p>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section><!-- End Counts Section -->
 
@@ -247,13 +263,14 @@
                     <p class="" data-aos="zoom-in-up" data-aos-duration="1000">Temukan kelas-kelas bimbel kami yang dirancang oleh tutor ahli untuk membantu Anda meraih kesuksesan akademis dengan mudah dan menyenangkan.</p>
                 </div>
 
-                <div class="row" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                <div class="row" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" style="margin-left: 100px">
                     @foreach ($poli as $item)
                         <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                             <div class="icon-box">
-                                <div class="icon"><i class="bx bx-atom"></i></div>
-                                <h4><a href="">{{ $item->nama }} Focused </a></h4>
-                                <p>{{ $item->deskripsi }}</p>
+                                <div class="icon"><i style='font-size:48px' class='fas'>&#xf5d2;</i></div>
+                                    <h4><a href="">Kelas {{ $item->nama }} </a></h4>
+                                <p>{{ $item->deskripsi }}</p><br>
+                                <button class="button2 scrollto"><a href="#appointment" style="color: black;">Daftar</a></button>
                             </div>
                         </div>
                     @endforeach
@@ -266,14 +283,14 @@
             <div class="container">
 
                 <div class="section-title" data-aos="zoom-in-down">
-                    <h2>Guru Pengajar</h2>
+                    <h2>Mentor Pengajar</h2>
                     <p class="" data-aos="zoom-in-up" data-aos-duration="1000">Sambutlah tim pengajar kami yang berpengalaman dan penuh dedikasi yang siap membimbing Anda dalam perjalanan belajar
                     Bersama dengan tim pengajar kami, Anda akan merasakan kepercayaan diri yang meningkat dan kesuksesan yang lebih besar dalam pendidikan Anda..</p>
                 </div>
 
-                <div class="row" data-aos="flip-up" data-aos-duration="3000">
+                <div class="row" data-aos="fade-up" data-aos-duration="3000">
                     @foreach ($dokter as $item)
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" style="padding: 15px;">
                             <div class="member d-flex align-items-start">
                                 <div class="pic">
                                     @if ($item->foto == null)
@@ -285,8 +302,8 @@
                                 </div>
                                 <div class="member-info">
                                     <h4>{{ $item->nama_dokter }}</h4>
-                                    <span>Spesialis {{ $item->spesialis }}</span>
-                                    <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                    <span><i style='font-size:20px' class='fas'>&#xf02d;</i> Spesialis {{ $item->spesialis }}</span>
+                                    <p>Haii, Brainers!!! Salam Dari Mentor Kami</p>
                                     <div class="social">
                                         <a href="{{ $item->twitter }}"><i class="ri-twitter-fill"></i></a>
                                         <a href="{{ $item->facebook }}"><i class="ri-facebook-fill"></i></a>
@@ -357,7 +374,7 @@
                     <p>Dengan menerapkan strategi-strategi ini, Anda dapat memanfaatkan kekuatan kepribadian introvert Anda untuk mencapai kesuksesan akademis yang lebih besar. Ingatlah bahwa setiap individu memiliki gaya belajar yang unik, dan yang terpenting adalah menemukan pendekatan yang paling sesuai dengan preferensi dan kebutuhan Anda sendiri.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="medilab/assets/img/departments-1.jpg" alt="" class="img-fluid" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="medilab/assets/img/img1.jpg" alt="" class="img-fluid" data-aos="fade-left" data-aos-duration="2000" style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                   </div>
                 </div>
               </div>
@@ -381,7 +398,7 @@
                     <p>Ekstrovert sering kali menemukan motivasi dan inspirasi dari interaksi langsung dengan orang lain. Pertimbangkan untuk mencari mentor atau tutor yang dapat membimbing Anda dalam proses belajar. Interaksi langsung ini dapat membantu Anda tetap termotivasi dan memperoleh umpan balik yang berharga.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="medilab/assets/img/departments-2.jpg" alt="" class="img-fluid">
+                    <img src="medilab/assets/img/img2.jpg" alt="" class="img-fluid" style="border-radius: 10px;box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                   </div>
                 </div>
               </div>
@@ -402,7 +419,7 @@
                     <p>Dengan memahami kekuatan dan kelemahan masing-masing tipe kepribadian MBTI, organisasi dapat memanfaatkan potensi setiap individu secara optimal. Misalnya, dengan menugaskan introvert pada proyek-proyek yang membutuhkan konsentrasi mendalam, sementara ekstrovert dapat ditempatkan dalam peran yang melibatkan interaksi sosial dan kolaborasi tim. Selain itu, pemahaman ini juga dapat membantu dalam mengembangkan program pelatihan dan pengembangan yang disesuaikan dengan kebutuhan spesifik setiap individu, serta menciptakan lingkungan kerja yang inklusif dan menghargai perbedaan.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="medilab/assets/img/departments-3.jpg" alt="" class="img-fluid">
+                    <img src="medilab/assets/img/img3.jpg" alt="" class="img-fluid"style="border-radius: 10px;box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                   </div>
                 </div>
               </div>
@@ -426,7 +443,7 @@
                     <p>Dengan memahami dan menghargai perbedaan tipe kepribadian MBTI, pasangan dapat menciptakan hubungan yang lebih harmonis dan saling memahami. Komunikasi terbuka, fleksibilitas, dan kompromi adalah kunci untuk menghadapi tantangan yang mungkin muncul dari perbedaan kepribadian. Dengan mempraktikkan empati dan menghargai kekuatan masing-masing, pasangan dapat membangun hubungan yang solid dan penuh cinta.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="medilab/assets/img/departments-4.jpg" alt="" class="img-fluid">
+                    <img src="medilab/assets/img/img4.jpg" alt="" class="img-fluid"style="border-radius: 10px;box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                   </div>
                 </div>
               </div>
@@ -449,7 +466,7 @@
                     <p>Selain itu, mengenali tanda-tanda stres dan memahami pemicu stres yang spesifik untuk setiap tipe kepribadian MBTI dapat membantu dalam mengembangkan strategi pencegahan yang lebih efektif. Dengan mengkombinasikan pemahaman ini dengan praktik-praktik manajemen stres seperti mindfulness, olahraga, dan dukungan sosial, individu dapat meningkatkan kesehatan mental mereka dan menjalani kehidupan yang lebih seimbang dan bahagia.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="medilab/assets/img/departments-5.jpg" alt="" class="img-fluid">
+                    <img src="medilab/assets/img/departments-5.jpg" alt="" class="img-fluid" style="border-radius: 10px;box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                   </div>
                 </div>
               </div>
@@ -457,6 +474,64 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="about1" class="about1">
+        <div class="container">
+                <div class="section-title" data-aos="zoom-in-down">
+                <h2>Vidio Pembelajaran</h2>
+                        <p class="" data-aos="zoom-in-up" data-aos-duration="1000"> Selamat datang di halaman Vidio Course kami, 
+                tempat Anda dapat menemukan Vidio informatif dan inspiratif tentang berbagai macam vidio pembelajaran yang dapat membantu anda dalam pengembangan diri. 
+                Dari tips belajar hingga tren terbaru dalam metode pengajaran, kami menyajikan konten-konten yang dirancang untuk memberikan wawasan baru dan memotivasi Anda dalam perjalanan belajar Anda. 
+                Temukan inspirasi untuk meningkatkan kualitas pendidikan dan pengembangan pribadi Anda.</p>
+                </div>
+            <div class="col-lg-8 align-items-stretch" data-aos="fade-right" data-aos-duration="1200">
+                <div class="icon-boxes">
+                                    <div class="row">
+                                        <div class="col-xl-4 align-items-stretch" data-aos="fade-right" data-aos-duration="1400">
+                                            <div class="icon-box mt-4 mt-xl-0">
+                                                <h4>Vidio 1</h4>
+                                                        <div class="video-box1 justify-content-center align-items-stretch position-relative">
+                                                            <a href="https://www.youtube.com/watch?v=309beMyhXtg" class="glightbox play-btn mb-4"></a>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 align-items-stretch">
+                                            <div class="icon-box mt-4 mt-xl-0">
+                                                <h4>Vidio 2</h4>
+                                                        <div class="video-box2 justify-content-center align-items-stretch position-relative">
+                                                            <a href="https://www.youtube.com/watch?v=309beMyhXtg" class="glightbox play-btn mb-4"></a>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>
+
+            </div><br>
+            <div class="col-lg-8 align-items-stretch" style="margin-left: 700px; margin-top: -358px" data-aos="fade-left" data-aos-duration="1200">
+                <div class="icon-boxes">
+                                    <div class="row">
+                                        <div class="col-xl-4 align-items-stretch">
+                                            <div class="icon-box mt-4 mt-xl-0">
+                                                <h4>Vidio 3</h4>
+                                                        <div class="video-box3 justify-content-center align-items-stretch position-relative">
+                                                            <a href="https://www.youtube.com/watch?v=309beMyhXtg" class="glightbox play-btn mb-4"></a>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4 align-items-stretch" data-aos="fade-left" data-aos-duration="1400">
+                                            <div class="icon-box mt-4 mt-xl-0">
+                                                <h4>Vidio 4</h4>
+                                                        <div class="video-box4 justify-content-center align-items-stretch position-relative">
+                                                            <a href="https://www.youtube.com/watch?v=309beMyhXtg" class="glightbox play-btn mb-4"></a>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>
+
+            </div>
+            
+        </div> <!-- End .content-->
     </section>
         <!-- ======= Appointment Section ======= -->
         <section id="appointment" class="appointment section-bg">
@@ -554,7 +629,7 @@
         <section id="testimonials" class="testimonials" data-aos="zoom-in-down">
             <div class="container">
             <div class="section-title">
-                    <h2>Review</h2>
+                    <h2>Testimonial</h2>
                     <p class="" data-aos="zoom-in-up" data-aos-duration="1000">Selamat datang di halaman review kami! Temukan pandangan langsung dari pengguna tentang pengalaman mereka dengan layanan bimbel offline kami.
                          Dari testimoni siswa hingga ulasan tentang fitur-fitur pembelajaran kami, 
                         dapatkan wawasan yang jujur untuk memahami bagaimana kami dapat membantu Anda mencapai tujuan belajar Anda.</p>
@@ -657,13 +732,12 @@
 
             </div>
         </section><!-- End Testimonials Section -->
-
         <!-- ======= Gallery Section ======= -->
         <section id="gallery" class="gallery">
             <div class="container">
 
                 <div class="section-title">
-                    <h2 class="" data-aos="zoom-in-down">Gallery</h2>
+                    <h2 class="" data-aos="zoom-in-down">Galeri</h2>
                     <p class="" data-aos="zoom-in-up" data-aos-duration="1000"> Selamat datang di halaman galeri kami, tempat di mana momen-momen berharga dari perjalanan belajar para siswa kami ditampilkan dengan bangga. 
                         Dari gambar-gambar yang menampilkan keceriaan dalam proses belajar hingga foto-foto acara-acara komunitas yang meriah, galeri kami adalah cerminan dari semangat dan dedikasi kami dalam membimbing siswa menuju kesuksesan. 
                         Jelajahi galeri kami untuk mendapatkan inspirasi dan merasakan atmosfer positif dari komunitas pembelajar kami.</p>
@@ -677,7 +751,7 @@
                         <div class="gallery-item">
                             <a href="/medilab/assets/img/gallery/Testing1.jpg" class="galelry-lightbox">
                                 <img src="/medilab/assets/img/gallery/Testing1.jpg" alt=""
-                                    class="img-fluid">
+                                    class="img-fluid" style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                             </a>
                         </div>
                     </div>
@@ -686,7 +760,7 @@
                         <div class="gallery-item">
                             <a href="/medilab/assets/img/gallery/Testing2.jpg" class="galelry-lightbox">
                                 <img src="/medilab/assets/img/gallery/Testing2.jpg" alt=""
-                                    class="img-fluid">
+                                    class="img-fluid"style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                             </a>
                         </div>
                     </div>
@@ -695,7 +769,7 @@
                         <div class="gallery-item">
                             <a href="/medilab/assets/img/gallery/Testing3.jpg" class="galelry-lightbox">
                                 <img src="/medilab/assets/img/gallery/Testing3.jpg" alt=""
-                                    class="img-fluid">
+                                    class="img-fluid"style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                             </a>
                         </div>
                     </div>
@@ -704,7 +778,7 @@
                         <div class="gallery-item">
                             <a href="/medilab/assets/img/gallery/Testing4.jpg" class="galelry-lightbox">
                                 <img src="/medilab/assets/img/gallery/Testing4.jpg" alt=""
-                                    class="img-fluid">
+                                    class="img-fluid"style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                             </a>
                         </div>
                     </div>
@@ -713,7 +787,7 @@
                         <div class="gallery-item">
                             <a href="/medilab/assets/img/gallery/Testing5.jpg" class="galelry-lightbox">
                                 <img src="/medilab/assets/img/gallery/Testing5.jpg" alt=""
-                                    class="img-fluid">
+                                    class="img-fluid"style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                             </a>
                         </div>
                     </div>
@@ -722,7 +796,7 @@
                         <div class="gallery-item">
                             <a href="/medilab/assets/img/gallery/Testing6.jpg" class="galelry-lightbox">
                                 <img src="/medilab/assets/img/gallery/Testing6.jpg" alt=""
-                                    class="img-fluid">
+                                    class="img-fluid"style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                             </a>
                         </div>
                     </div>
@@ -731,7 +805,7 @@
                         <div class="gallery-item">
                             <a href="/medilab/assets/img/gallery/Testing7.jpg" class="galelry-lightbox">
                                 <img src="/medilab/assets/img/gallery/Testing7.jpg" alt=""
-                                    class="img-fluid">
+                                    class="img-fluid"style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                             </a>
                         </div>
                     </div>
@@ -740,7 +814,7 @@
                         <div class="gallery-item">
                             <a href="/medilab/assets/img/gallery/Testing8.jpg" class="galelry-lightbox">
                                 <img src="/medilab/assets/img/gallery/Testing8.jpg" alt=""
-                                    class="img-fluid">
+                                    class="img-fluid"style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                             </a>
                         </div>
                     </div>
@@ -755,7 +829,7 @@
             <div class="container">
 
                 <div class="section-title" data-aos="zoom-in-down">
-                    <h2>Contact</h2>
+                    <h2>Kontak Kami</h2>
                     <p class=""  data-aos="zoom-in-up" data-aos-duration="1000"> Selamat datang di halaman kontak kami. 
                         Silakan hubungi kami untuk pertanyaan, masukan, atau informasi lebih lanjut melalui formulir yang tersedia. Kami siap membantu Anda dengan segala kebutuhan Anda. 
                         Terima kasih atas kunjungan Anda!.</p>
@@ -775,7 +849,7 @@
                         <div class="info">
                             <div class="address" data-aos="zoom-in-up" data-aos-duration="1200">
                                 <i class="bi bi-geo-alt"></i>
-                                <h4>Location:</h4>
+                                <h4>Lokasi:</h4>
                                 <p>Jl. Budi Utomo No.7, Ps. Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10710</p>
                             </div>
 
@@ -787,7 +861,7 @@
 
                             <div class="phone" data-aos="zoom-in-up" data-aos-duration="1600">
                                 <i class="bi bi-phone"></i>
-                                <h4>Call:</h4>
+                                <h4>Telepon:</h4>
                                 <p>(021) 5678912</p>
                             </div>
 
@@ -801,26 +875,26 @@
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Name" required>
+                                        placeholder="Nama Anda" required style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
                                     <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email" required>
+                                        placeholder="Email Anda" required style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                                 </div>
                             </div>
                             <div class="form-group mt-3">
                                 <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject" required>
+                                    placeholder="Subjek" required style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);">
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                <textarea class="form-control" name="message" rows="5" placeholder="Pesan" required style="border-radius: 10px; box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);"></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button type="submit" >Kirim Pesan</button></div>
                         </form>
 
                     </div>
@@ -845,33 +919,31 @@
                         Jl. Budi Utomo No.7 Ps. Baru, <br>
                         Kota Jakarta Pusat, Daerah <br>
                         Khusus Ibukota Jakarta 10710 <br><br>
-                            <strong>Phone:</strong> (021) 5678912<br>
+                            <strong>Telepon:</strong> (021) 5678912<br>
                             <strong>Email:</strong> BrainBoost@gmail.com<br>
                         </p>
                     </div>
 
                     <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
+                        <h4>Link Pintasan</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Beranda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Jenis Kelas</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Tutoring</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Introverts</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Extroverts</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Intuitives</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Introvert</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Extrovert</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Intuitive</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
+                        <h4>Bergabung Bersama Kami</h4>
                         <p>Ikuti berita terbaru dan jangan lewatkan informasi terbaru dengan bergabung di newsletter kami!</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
@@ -885,15 +957,15 @@
         <div class="container d-md-flex py-4">
 
             <div class="me-md-auto text-center text-md-start">
-                <div class="copyright">
-                    &copy; Copyright <strong><span>BrainBoost</span></strong>. All Rights Reserved
+                <div class="copyright" style="color: white;">
+                    &copy; Copyright <strong><span style="color: white;">BrainBoost</span></strong>. All Rights Reserved
                 </div>
-                <div class="credits">
+                <div class="credits" style="color: white;">
                     <!-- All the links in the footer should remain intact. -->
                     <!-- You can delete the links only if you purchased the pro version. -->
                     <!-- Licensing information: https://bootstrapmade.com/license/ -->
                     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-                    Designed by HexRanger
+                    Designed by HexRanger Incernated
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">

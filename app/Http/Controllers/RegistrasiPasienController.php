@@ -77,7 +77,7 @@ class RegistrasiPasienController extends Controller
         $adm->biaya = $poli->biaya;
         $adm->save();
         \DB::commit();
-        flash('Registrasi Berhasil, Silahkan datang pada tanggal ' . $request->tanggal . ' untuk melakukan pemeriksaan');
+        flash('Registrasi Berhasil, Terimakasih sudah mengisi data jadwal anda pada ' . $request->tanggal . ' Silahkan Tunggu Informasi selanjutnya dari pihak Mentor pendidik kami yang akan menghubungi anda langsung');
         return back();
     }
 
